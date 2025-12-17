@@ -25,6 +25,7 @@ def getData():
             units.append(cleanUnit)
     print("champ data done")
 
+    # get only trait data
     allTraits = set16["traits"]
     traits = dict()
     
