@@ -1,0 +1,1018 @@
+[
+  {
+    "name": "Tristana",
+    "cost": 2,
+    "traits": [
+      "Yordle",
+      "Gunslinger"
+    ],
+    "type": "AD",
+    "role": "Caster"
+  },
+  {
+    "name": "Lulu",
+    "cost": 1,
+    "traits": [
+      "Yordle",
+      "Arcanist"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Teemo",
+    "cost": 2,
+    "traits": [
+      "Yordle",
+      "Longshot"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Rumble",
+    "cost": 1,
+    "traits": [
+      "Yordle",
+      "Defender"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Nautilus",
+    "cost": 3,
+    "traits": [
+      "Bilgewater",
+      "Juggernaut",
+      "Warden"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Twisted Fate",
+    "cost": 2,
+    "traits": [
+      "Bilgewater",
+      "Quickstriker"
+    ],
+    "type": "AP",
+    "role": "Specialist"
+  },
+  {
+    "name": "Gangplank",
+    "cost": 3,
+    "traits": [
+      "Bilgewater",
+      "Slayer",
+      "Vanquisher"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Illaoi",
+    "cost": 1,
+    "traits": [
+      "Bilgewater",
+      "Bruiser"
+    ],
+    "type": "AD",
+    "role": "Tank"
+  },
+  {
+    "name": "Miss Fortune",
+    "cost": 4,
+    "traits": [
+      "Bilgewater",
+      "Gunslinger"
+    ],
+    "type": "AD",
+    "role": "Caster"
+  },
+  {
+    "name": "Sion",
+    "cost": 2,
+    "traits": [
+      "Noxus",
+      "Bruiser"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Briar",
+    "cost": 1,
+    "traits": [
+      "Noxus",
+      "Slayer",
+      "Juggernaut"
+    ],
+    "type": "AD",
+    "role": "Reaper"
+  },
+  {
+    "name": "Draven",
+    "cost": 3,
+    "traits": [
+      "Noxus",
+      "Quickstriker"
+    ],
+    "type": "AD",
+    "role": "Carry"
+  },
+  {
+    "name": "Ambessa",
+    "cost": 4,
+    "traits": [
+      "Noxus",
+      "Vanquisher"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Zoe",
+    "cost": 3,
+    "traits": [
+      "Targon"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Leona",
+    "cost": 3,
+    "traits": [
+      "Targon"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Aphelios",
+    "cost": 2,
+    "traits": [
+      "Targon"
+    ],
+    "type": "AD",
+    "role": "Carry"
+  },
+  {
+    "name": "Taric",
+    "cost": 4,
+    "traits": [
+      "Targon"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Jarvan IV",
+    "cost": 1,
+    "traits": [
+      "Demacia",
+      "Defender"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Sona",
+    "cost": 1,
+    "traits": [
+      "Demacia",
+      "Invoker"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Garen",
+    "cost": 4,
+    "traits": [
+      "Demacia",
+      "Defender"
+    ],
+    "type": "AD",
+    "role": "Tank"
+  },
+  {
+    "name": "Lux",
+    "cost": 4,
+    "traits": [
+      "Demacia",
+      "Arcanist"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Anivia",
+    "cost": 1,
+    "traits": [
+      "Freljord",
+      "Invoker"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Ashe",
+    "cost": 2,
+    "traits": [
+      "Freljord",
+      "Quickstriker"
+    ],
+    "type": "AD",
+    "role": "Carry"
+  },
+  {
+    "name": "Braum",
+    "cost": 4,
+    "traits": [
+      "Freljord",
+      "Warden"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Lissandra",
+    "cost": 4,
+    "traits": [
+      "Freljord",
+      "Invoker"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Milio",
+    "cost": 3,
+    "traits": [
+      "Ixtal",
+      "Invoker"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Neeko",
+    "cost": 2,
+    "traits": [
+      "Ixtal",
+      "Arcanist",
+      "Defender"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Jinx",
+    "cost": 3,
+    "traits": [
+      "Zaun",
+      "Gunslinger"
+    ],
+    "type": "AD",
+    "role": "Specialist"
+  },
+  {
+    "name": "Caitlyn",
+    "cost": 1,
+    "traits": [
+      "Piltover",
+      "Longshot"
+    ],
+    "type": "AD",
+    "role": "Caster"
+  },
+  {
+    "name": "Vi",
+    "cost": 2,
+    "traits": [
+      "Piltover",
+      "Zaun",
+      "Defender"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Seraphine",
+    "cost": 4,
+    "traits": [
+      "Piltover",
+      "Disruptor"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Yasuo",
+    "cost": 2,
+    "traits": [
+      "Ionia",
+      "Slayer"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Ahri",
+    "cost": 3,
+    "traits": [
+      "Ionia",
+      "Arcanist"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Wukong",
+    "cost": 4,
+    "traits": [
+      "Ionia",
+      "Bruiser"
+    ],
+    "type": "AD",
+    "role": "Tank"
+  },
+  {
+    "name": "Shen",
+    "cost": 1,
+    "traits": [
+      "Ionia",
+      "Bruiser"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Malzahar",
+    "cost": 3,
+    "traits": [
+      "Void",
+      "Disruptor"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Rek'Sai",
+    "cost": 2,
+    "traits": [
+      "Void",
+      "Vanquisher"
+    ],
+    "type": "AD",
+    "role": "Reaper"
+  },
+  {
+    "name": "Cho'Gath",
+    "cost": 2,
+    "traits": [
+      "Void",
+      "Juggernaut"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Kog'Maw",
+    "cost": 1,
+    "traits": [
+      "Void",
+      "Arcanist",
+      "Longshot"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Annie",
+    "cost": 5,
+    "traits": [
+      "Dark Child",
+      "Arcanist"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Ornn",
+    "cost": 5,
+    "traits": [
+      "Blacksmith",
+      "Warden"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Kindred",
+    "cost": 5,
+    "traits": [
+      "Eternal",
+      "Quickstriker"
+    ],
+    "type": "AD",
+    "role": "Carry"
+  },
+  {
+    "name": "Azir",
+    "cost": 5,
+    "traits": [
+      "Shurima",
+      "Emperor",
+      "Disruptor"
+    ],
+    "type": "AP",
+    "role": "Carry"
+  },
+  {
+    "name": "Zilean",
+    "cost": 5,
+    "traits": [
+      "Chronokeeper",
+      "Invoker"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Fiddlesticks",
+    "cost": 5,
+    "traits": [
+      "Harvester",
+      "Vanquisher"
+    ],
+    "type": "AP",
+    "role": "Reaper"
+  },
+  {
+    "name": "Shyvana",
+    "cost": 5,
+    "traits": [
+      "Dragonborn",
+      "Juggernaut"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Galio",
+    "cost": 5,
+    "traits": [
+      "Demacia",
+      "Heroic"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Tahm Kench",
+    "cost": 5,
+    "traits": [
+      "Bilgewater",
+      "Glutton",
+      "Bruiser"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Sejuani",
+    "cost": 3,
+    "traits": [
+      "Freljord",
+      "Defender"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Sett",
+    "cost": 5,
+    "traits": [
+      "Ionia",
+      "The Boss"
+    ],
+    "type": "AP",
+    "role": "Fighter"
+  },
+  {
+    "name": "Brock",
+    "cost": 5,
+    "traits": [
+      "Ixtal"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "T-Hex",
+    "cost": 5,
+    "traits": [
+      "HexMech",
+      "Piltover",
+      "Gunslinger"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Bel'Veth",
+    "cost": 4,
+    "traits": [
+      "Void",
+      "Slayer"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Singed",
+    "cost": 4,
+    "traits": [
+      "Zaun",
+      "Juggernaut"
+    ],
+    "type": "AP",
+    "role": "Fighter"
+  },
+  {
+    "name": "Aurelion Sol",
+    "cost": 5,
+    "traits": [
+      "Star Forger",
+      "Targon"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Veigar",
+    "cost": 4,
+    "traits": [
+      "Yordle",
+      "Arcanist"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Baron Nashor",
+    "cost": 5,
+    "traits": [
+      "Void",
+      "Riftscourge"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Darius",
+    "cost": 3,
+    "traits": [
+      "Noxus",
+      "Defender"
+    ],
+    "type": "AD",
+    "role": "Tank"
+  },
+  {
+    "name": "Yone",
+    "cost": 4,
+    "traits": [
+      "Ionia",
+      "Slayer"
+    ],
+    "type": "HF",
+    "role": "ighter"
+  },
+  {
+    "name": "Warwick",
+    "cost": 4,
+    "traits": [
+      "Zaun",
+      "Quickstriker"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Fizz",
+    "cost": 4,
+    "traits": [
+      "Bilgewater",
+      "Yordle"
+    ],
+    "type": "AP",
+    "role": "Reaper"
+  },
+  {
+    "name": "Poppy ",
+    "cost": 2,
+    "traits": [
+      "Demacia",
+      "Yordle",
+      "Juggernaut"
+    ],
+    "type": "AD",
+    "role": "Tank"
+  },
+  {
+    "name": "Kennen ",
+    "cost": 3,
+    "traits": [
+      "Ionia",
+      "Yordle",
+      "Defender"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Ziggs ",
+    "cost": 5,
+    "traits": [
+      "Zaun",
+      "Yordle",
+      "Longshot"
+    ],
+    "type": "AP",
+    "role": "Carry"
+  },
+  {
+    "name": "Aatrox ",
+    "cost": 5,
+    "traits": [
+      "Darkin",
+      "World Ender",
+      "Slayer"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Volibear ",
+    "cost": 5,
+    "traits": [
+      "Freljord",
+      "Bruiser"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Jhin",
+    "cost": 1,
+    "traits": [
+      "Ionia",
+      "Gunslinger"
+    ],
+    "type": "AD",
+    "role": "Carry"
+  },
+  {
+    "name": "Sylas ",
+    "cost": 5,
+    "traits": [
+      "Chainbreaker",
+      "Arcanist",
+      "Defender"
+    ],
+    "type": "AP",
+    "role": "Fighter"
+  },
+  {
+    "name": "Ryze ",
+    "cost": 5,
+    "traits": [
+      "Rune Mage"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Nidalee ",
+    "cost": 4,
+    "traits": [
+      "Ixtal",
+      "Huntress"
+    ],
+    "type": "AP",
+    "role": "Fighter"
+  },
+  {
+    "name": "Tryndamere ",
+    "cost": 2,
+    "traits": [
+      "Freljord",
+      "Slayer"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Rift Herald ",
+    "cost": 4,
+    "traits": [
+      "Void",
+      "Bruiser"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Mel ",
+    "cost": 5,
+    "traits": [
+      "Noxus",
+      "Disruptor"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Graves ",
+    "cost": 2,
+    "traits": [
+      "Bilgewater",
+      "Gunslinger"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Skarner ",
+    "cost": 4,
+    "traits": [
+      "Ixtal"
+    ],
+    "type": "AD",
+    "role": "Tank"
+  },
+  {
+    "name": "Diana ",
+    "cost": 4,
+    "traits": [
+      "Targon"
+    ],
+    "type": "AP",
+    "role": "Reaper"
+  },
+  {
+    "name": "Kai'Sa ",
+    "cost": 4,
+    "traits": [
+      "Assimilator",
+      "Void",
+      "Longshot"
+    ],
+    "type": "AD",
+    "role": "CasterFormSwapper"
+  },
+  {
+    "name": "Renekton ",
+    "cost": 4,
+    "traits": [
+      "Shurima"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Nasus ",
+    "cost": 4,
+    "traits": [
+      "Shurima"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Xerath ",
+    "cost": 5,
+    "traits": [
+      "Shurima",
+      "Ascendant"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Thresh ",
+    "cost": 5,
+    "traits": [
+      "Shadow Isles",
+      "Warden"
+    ],
+    "type": "AP",
+    "role": "Fighter"
+  },
+  {
+    "name": "Gwen ",
+    "cost": 3,
+    "traits": [
+      "Shadow Isles",
+      "Disruptor"
+    ],
+    "type": "AP",
+    "role": "Fighter"
+  },
+  {
+    "name": "Kalista ",
+    "cost": 4,
+    "traits": [
+      "Shadow Isles",
+      "Vanquisher"
+    ],
+    "type": "AD",
+    "role": "Caster"
+  },
+  {
+    "name": "LeBlanc ",
+    "cost": 3,
+    "traits": [
+      "Noxus",
+      "Invoker"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Viego",
+    "cost": 1,
+    "traits": [
+      "Shadow Isles",
+      "Quickstriker"
+    ],
+    "type": "HF",
+    "role": "ighter"
+  },
+  {
+    "name": "Ekko",
+    "cost": 2,
+    "traits": [
+      "Zaun",
+      "Disruptor"
+    ],
+    "type": "AP",
+    "role": "Fighter"
+  },
+  {
+    "name": "Bard ",
+    "cost": 2,
+    "traits": [
+      "Caretaker"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Vayne",
+    "cost": 3,
+    "traits": [
+      "Demacia",
+      "Longshot"
+    ],
+    "type": "AD",
+    "role": "Carry"
+  },
+  {
+    "name": "Yunara",
+    "cost": 4,
+    "traits": [
+      "Ionia",
+      "Quickstriker"
+    ],
+    "type": "AD",
+    "role": "Carry"
+  },
+  {
+    "name": "Swain",
+    "cost": 4,
+    "traits": [
+      "Noxus",
+      "Arcanist",
+      "Juggernaut"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Xin Zhao",
+    "cost": 2,
+    "traits": [
+      "Demacia",
+      "Ionia",
+      "Warden"
+    ],
+    "type": "AD",
+    "role": "Tank"
+  },
+  {
+    "name": "Yorick ",
+    "cost": 2,
+    "traits": [
+      "Shadow Isles",
+      "Warden"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Orianna ",
+    "cost": 2,
+    "traits": [
+      "Piltover",
+      "Invoker"
+    ],
+    "type": "AP",
+    "role": "Caster"
+  },
+  {
+    "name": "Qiyana",
+    "cost": 1,
+    "traits": [
+      "Ixtal",
+      "Slayer"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Loris",
+    "cost": 3,
+    "traits": [
+      "Piltover",
+      "Warden"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Blitzcrank",
+    "cost": 1,
+    "traits": [
+      "Zaun",
+      "Juggernaut"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Dr. Mundo",
+    "cost": 3,
+    "traits": [
+      "Zaun",
+      "Bruiser"
+    ],
+    "type": "AD",
+    "role": "Tank"
+  },
+  {
+    "name": "Zaahen",
+    "cost": 5,
+    "traits": [
+      "Darkin",
+      "Immortal"
+    ],
+    "type": "AD",
+    "role": "Fighter"
+  },
+  {
+    "name": "Tibbers",
+    "cost": 11,
+    "traits": [
+      "Arcanist"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  },
+  {
+    "name": "Lucian & Senna",
+    "cost": 5,
+    "traits": [
+      "Soulbound",
+      "Gunslinger"
+    ],
+    "type": "AD",
+    "role": "Caster"
+  },
+  {
+    "name": "Kobuko & Yuumi",
+    "cost": 3,
+    "traits": [
+      "Yordle",
+      "Bruiser",
+      "Invoker"
+    ],
+    "type": "AP",
+    "role": "Tank"
+  }
+]

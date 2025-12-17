@@ -1,0 +1,84 @@
+import requests
+import json
+
+URL = "https://raw.communitydragon.org/latest/cdragon/tft/en_us.json"
+
+def fetch_trait_data():
+    try:
+        response = requests.get(URL)
+        response.raise_for_status()
+        raw_data = response.json()
+    except Exception as e:
+        print(f"Error fetching data: {e}")
+        return {}
+
+    # 1. Find the correct Set ID (same logic as before)
+    if 'sets' not in raw_data:
+        print("Structure changed: 'sets' key missing.")
+        return {}
+        
+    numeric_sets = [k for k in raw_data['sets'].keys() if k.isdigit()]
+    if not numeric_sets:
+        print("No numeric set IDs found.")
+        return {}
+        
+    latest_set_id = max(numeric_sets, key=int)
+    print(f"Extracting TRAITS for Set {latest_set_id}...")
+    
+    set_data = raw_data['sets'][latest_set_id]
+    
+    # 2. Extract Traits
+    # Traits are usually in set_data['traits']
+    if 'traits' not in set_data:
+        print("No 'traits' key found in this set.")
+        return {}
+
+    clean_traits = {}
+    
+    for trait in set_data['traits']:
+        # We only care about traits that have "effects" or "sets" (breakpoints)
+        # The API name usually looks like "Set16_Sniper"
+        name = trait.get('name')
+        api_name = trait.get('apiName')
+        
+        # Skip internal/hidden traits (often have no name or strange API names)
+        if not name or "Hidden" in name:
+            continue
+
+        # Extract breakpoints
+        # The structure is usually a list of objects like:
+        # "effects": [ {"minUnits": 2, "style": 1}, {"minUnits": 4, "style": 3} ]
+        # Style guide: 0=None, 1=Bronze, 3=Gold, 4=Chromatic (Prismatic) - approximate
+        
+        breakpoints = {}
+        effects = trait.get('effects', [])
+        
+        for effect in effects:
+            min_units = effect.get('minUnits')
+            style = effect.get('style', 0) 
+            
+            # Map the integer style to a readable string (Optional, but helpful for debugging)
+            # 1 = Bronze, 2 = Silver, 3 = Gold, 4 = Prismatic (can vary by set)
+            style_map = {1: "Bronze", 2: "Silver", 3: "Gold", 4: "Prismatic"}
+            style_name = style_map.get(style, "Standard")
+            
+            if min_units:
+                breakpoints[min_units] = style
+        
+        if breakpoints:
+            clean_traits[name] = breakpoints
+
+    return clean_traits
+
+if __name__ == "__main__":
+    trait_data = fetch_trait_data()
+    
+    if trait_data:
+        with open('traits_set16.json', 'w') as f:
+            json.dump(trait_data, f, indent=2)
+        print(f"Successfully scraped {len(trait_data)} traits.")
+        # Print a sample to verify
+        sample_key = list(trait_data.keys())[0]
+        print(f"Sample ({sample_key}): {trait_data[sample_key]}")
+    else:
+        print("Failed to extract traits.")

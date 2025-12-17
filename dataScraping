@@ -1,0 +1,53 @@
+import requests
+import json
+
+def getData():
+    print("started")
+    response = requests.get("https://raw.communitydragon.org/latest/cdragon/tft/en_us.json")
+    data = response.json()
+    
+    # get Set 16 data
+    set16 = data["sets"]["16"]
+    # grab data for units
+    allChamps = set16["champions"]
+    units = []
+    
+    # extract only desired properties
+    for unit in allChamps:
+        if unit["traits"]:
+            cleanUnit = {
+                    'name': unit['name'],
+                    'cost': unit['cost'],
+                    'traits': unit["traits"],
+                    'type': unit["role"][:2],
+                    'role': unit["role"][2:]
+                }
+            units.append(cleanUnit)
+    print("champ data done")
+
+    allTraits = set16["traits"]
+    traits = dict()
+    
+    for trait in allTraits:
+        tmp = dict()
+        tiers = trait["effects"]
+
+        # the data stores what I think is
+        # 1: Bronze, 3: Silver, 5: Gold, 6: Prismatic, 4: Unique
+        for tier in tiers:
+            cutoff = tier["minUnits"]
+            value = tier["style"]
+            tmp[cutoff] = value
+
+        traits[trait["name"]] = tmp
+    print("trait data done")
+
+    print("done getting data")
+    return units, traits
+
+unitData, traitData = getData()
+with open('units_set16.json', 'w') as f:
+    json.dump(unitData, f, indent=2)
+with open('traits_set16.json', 'w') as g:
+    json.dump(traitData, g, indent=2)
+print("data saved")
