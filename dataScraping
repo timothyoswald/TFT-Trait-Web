@@ -16,7 +16,7 @@ def getData():
     for unit in allChamps:
         if unit["traits"]:
             cleanUnit = {
-                    'name': unit['name'],
+                    'name': unit['name'].strip(),
                     'cost': unit['cost'],
                     'traits': unit["traits"],
                     'type': unit["role"][:2],
@@ -25,7 +25,7 @@ def getData():
             units.append(cleanUnit)
     print("champ data done")
 
-    # get only trait data
+    # get only traits
     allTraits = set16["traits"]
     traits = dict()
     
