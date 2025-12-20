@@ -1,18 +1,12 @@
 import networkx as nx
 import itertools
 import json
-
-def loadData():
-    with open ("units_set16.json", "r") as f:
-        units = json.load(f)
-    with open ("traits_nohero_set16.json", "r") as h:
-        traits = json.load(h)
-    # with open ("traits_set16.json", "r") as g:
-    #     traits = json.load(g)
-    return units, traits
+import random
+import helpers
 
 # tibbers is counted as a unit but can only be played
 # with annie so need to manually enforce later
+# baron counts as 2 void need to update
 def makeGraph(units, traits):
     G = nx.Graph()
     # add nodes to graph labeled by unit name
@@ -28,46 +22,62 @@ def makeGraph(units, traits):
             G.add_edge(unitA, unitB, weight = len(sharedTraits), shared = list(sharedTraits))
     return G
 
-# for now, score should be based on unit cost
-# and traits contributed to the board
-# there is an issue where score changes
-# as new units are added
-def computeScore(G, allTraits, boardTraits, newUnit):
-    score = G.nodes[newUnit]["cost"]
-    for trait in G.nodes[newUnit]["traits"]:
-        if trait in boardTraits:
-            boardTraits[trait] += 1
-            num = boardTraits[trait]
-            if str(num) in allTraits[trait]:
-                score += num
-        else:
-            boardTraits[trait] = 1
+# fix later
+def computeScore(G, board):
+    score = 0
+    for unit in board:
+        score += G.nodes[unit]["cost"]
     return score
 
-# given a carry find a level 9 comp around it
-def findCompositionWithCarry(G, carry, traits):
-    currentBoard = {carry}
-    totalScore = G.nodes[carry]["cost"]
-    traitsSoFar = {trait: 1 for trait in G.nodes[carry]["traits"]}
+# perform BFS but only note top 20 teams at any time
+def beamSearch(G, traits, beamWidth = 20, teamSize = 9):
+    # initially comps randomly
+    startUnits = random.sample(list(G.nodes), k = 20)
+    currentBeams = []
+    for unit in startUnits:
+        score = computeScore(G, [unit])
+        currentBeams.append((score, [unit]))
 
-    while len(currentBoard) < 9:
-        bestOption = None
-        bestScore = 0
-        # look at all current neighbors and choose best one
-        # should definitely make this more efficient to not 
-        # relook through all neighbors
-        for unit in currentBoard:
-            for nbor in G.neighbors(unit):
-                score = computeScore(G, traits, traitsSoFar, nbor)
-                if score > bestScore:
-                    bestOption = nbor
-                    bestScore = score
-        currentBoard.add(bestOption)
-        totalScore += bestScore
+    # consider all possible new teams
+    for _ in range(teamSize - 1):
+        possibleNewComps = []
 
-    return currentBoard, totalScore
+        # add all neighbors of current top 20
+        for score, comp in currentBeams:
+            newCandidates = set()
+            for x in comp:
+                nbors = G.neighbors(x)
+                newCandidates.update(nbors)
+        
+            # test all possible new teams
+            for unit in newCandidates:
+                if unit not in comp:
+                    trialComp = sorted(comp + [unit]) # sort so we can compare later
+                    trialScore = computeScore(G, trialComp)
+                    possibleNewComps.append((trialScore, trialComp))
+            
+        # keep top 20
+        possibleNewComps.sort(key = lambda x: x[0], reverse = True)
+        topNewComps = []
+        seenComps = set()
+        # need to make sure we don't have same comp twice
+        # but in different order
+        for newScore, newComp in possibleNewComps:
+            ID = tuple(newComp) # tuple so it can be hashed
+            if ID not in seenComps:
+                seenComps.add(ID)
+                topNewComps.append((newScore, newComp))
+            if len(topNewComps) >= beamWidth:
+                break
+        
+        currentBeams = topNewComps
+    
+    return currentBeams[0]
+
+    
 
 
-units, traits = loadData()
+units, traits = helpers.loadData()
 G = makeGraph(units, traits)
-print(findCompositionWithCarry(G, "Kindred", traits))
+score, comp = beamSearch(G, traits)
+helpers.pretty_print_comp(comp, G, traits)
