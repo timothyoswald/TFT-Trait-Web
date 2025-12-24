@@ -7,7 +7,7 @@ import helpers
 # tibbers is counted as a unit but can only be played
 # with annie so need to manually enforce later
 # baron counts as 2 void need to update
-def makeGraph(units, traits):
+def makeGraph(units):
     G = nx.Graph()
     # add nodes to graph labeled by unit name
     for unit in units:
@@ -22,20 +22,46 @@ def makeGraph(units, traits):
             G.add_edge(unitA, unitB, weight = len(sharedTraits), shared = list(sharedTraits))
     return G
 
-# fix later
-def computeScore(G, board):
+# score based on unit cost, traits, frontline/carry ratio
+def computeScore(G, board, allTraits):
     score = 0
+    
+    # weight higher cost units more
     for unit in board:
-        score += G.nodes[unit]["cost"]
+        score += G.nodes[unit]["cost"] * 1.5
+
+    # gather all traits on the board
+    boardTraits = dict()
+    for unit in board:
+        traits = G.nodes[unit]["traits"]
+        for trt in traits:
+            if trt in boardTraits:
+                boardTraits[trt] += 1
+            else:
+                boardTraits[trt] = 1
+
+    for trait in boardTraits:
+        cutoffs = allTraits[trait]
+        maxRank = 0
+        for cutoff in cutoffs:
+            if boardTraits[trait] >= int(cutoff):
+                maxRank = cutoff
+        if len(cutoffs) == 1:
+            score += 2 * cutoffs.get(maxRank, 0)
+        else:
+            if maxRank == 2 or maxRank == 3: score += 10
+            if maxRank == 4 or maxRank == 5: score += 25
+            if maxRank == 6 or maxRank == 7: score += 60
+            if maxRank == 9 or maxRank == 10 or maxRank == 11: score += 500
     return score
 
 # perform BFS but only note top 20 teams at any time
-def beamSearch(G, traits, beamWidth = 20, teamSize = 9):
+def beamSearch(G, allTraits, beamWidth = 20, teamSize = 9):
     # initially comps randomly
     startUnits = random.sample(list(G.nodes), k = 20)
     currentBeams = []
     for unit in startUnits:
-        score = computeScore(G, [unit])
+        score = computeScore(G, [unit], allTraits)
         currentBeams.append((score, [unit]))
 
     # consider all possible new teams
@@ -53,7 +79,7 @@ def beamSearch(G, traits, beamWidth = 20, teamSize = 9):
             for unit in newCandidates:
                 if unit not in comp:
                     trialComp = sorted(comp + [unit]) # sort so we can compare later
-                    trialScore = computeScore(G, trialComp)
+                    trialScore = computeScore(G, trialComp, allTraits)
                     possibleNewComps.append((trialScore, trialComp))
             
         # keep top 20
@@ -78,6 +104,6 @@ def beamSearch(G, traits, beamWidth = 20, teamSize = 9):
 
 
 units, traits = helpers.loadData()
-G = makeGraph(units, traits)
+G = makeGraph(units)
 score, comp = beamSearch(G, traits)
 helpers.pretty_print_comp(comp, G, traits)

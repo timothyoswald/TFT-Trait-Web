@@ -6,8 +6,7 @@
       "Yordle",
       "Gunslinger"
     ],
-    "type": "AD",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Lulu",
@@ -16,8 +15,7 @@
       "Yordle",
       "Arcanist"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Teemo",
@@ -26,8 +24,7 @@
       "Yordle",
       "Longshot"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Rumble",
@@ -36,8 +33,7 @@
       "Yordle",
       "Defender"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Nautilus",
@@ -47,8 +43,7 @@
       "Juggernaut",
       "Warden"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Twisted Fate",
@@ -57,8 +52,7 @@
       "Bilgewater",
       "Quickstriker"
     ],
-    "type": "AP",
-    "role": "Specialist"
+    "role": "Carry"
   },
   {
     "name": "Gangplank",
@@ -68,8 +62,7 @@
       "Slayer",
       "Vanquisher"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Illaoi",
@@ -78,8 +71,7 @@
       "Bilgewater",
       "Bruiser"
     ],
-    "type": "AD",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Miss Fortune",
@@ -88,8 +80,7 @@
       "Bilgewater",
       "Gunslinger"
     ],
-    "type": "AD",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Sion",
@@ -98,8 +89,7 @@
       "Noxus",
       "Bruiser"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Briar",
@@ -109,8 +99,7 @@
       "Slayer",
       "Juggernaut"
     ],
-    "type": "AD",
-    "role": "Reaper"
+    "role": "Carry"
   },
   {
     "name": "Draven",
@@ -119,7 +108,6 @@
       "Noxus",
       "Quickstriker"
     ],
-    "type": "AD",
     "role": "Carry"
   },
   {
@@ -129,8 +117,7 @@
       "Noxus",
       "Vanquisher"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Zoe",
@@ -138,8 +125,7 @@
     "traits": [
       "Targon"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Leona",
@@ -147,8 +133,7 @@
     "traits": [
       "Targon"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Aphelios",
@@ -156,7 +141,6 @@
     "traits": [
       "Targon"
     ],
-    "type": "AD",
     "role": "Carry"
   },
   {
@@ -165,8 +149,7 @@
     "traits": [
       "Targon"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Jarvan IV",
@@ -175,8 +158,7 @@
       "Demacia",
       "Defender"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Sona",
@@ -185,8 +167,7 @@
       "Demacia",
       "Invoker"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Garen",
@@ -195,8 +176,7 @@
       "Demacia",
       "Defender"
     ],
-    "type": "AD",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Lux",
@@ -205,8 +185,7 @@
       "Demacia",
       "Arcanist"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Anivia",
@@ -215,8 +194,7 @@
       "Freljord",
       "Invoker"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Ashe",
@@ -225,7 +203,6 @@
       "Freljord",
       "Quickstriker"
     ],
-    "type": "AD",
     "role": "Carry"
   },
   {
@@ -235,8 +212,7 @@
       "Freljord",
       "Warden"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Lissandra",
@@ -245,8 +221,7 @@
       "Freljord",
       "Invoker"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Milio",
@@ -255,8 +230,7 @@
       "Ixtal",
       "Invoker"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Neeko",
@@ -266,8 +240,7 @@
       "Arcanist",
       "Defender"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Jinx",
@@ -276,8 +249,7 @@
       "Zaun",
       "Gunslinger"
     ],
-    "type": "AD",
-    "role": "Specialist"
+    "role": "Carry"
   },
   {
     "name": "Caitlyn",
@@ -286,8 +258,7 @@
       "Piltover",
       "Longshot"
     ],
-    "type": "AD",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Vi",
@@ -297,8 +268,7 @@
       "Zaun",
       "Defender"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Seraphine",
@@ -307,8 +277,7 @@
       "Piltover",
       "Disruptor"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Yasuo",
@@ -317,8 +286,7 @@
       "Ionia",
       "Slayer"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Ahri",
@@ -327,8 +295,7 @@
       "Ionia",
       "Arcanist"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Wukong",
@@ -337,8 +304,7 @@
       "Ionia",
       "Bruiser"
     ],
-    "type": "AD",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Shen",
@@ -347,8 +313,7 @@
       "Ionia",
       "Bruiser"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Malzahar",
@@ -357,8 +322,7 @@
       "Void",
       "Disruptor"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Rek'Sai",
@@ -367,8 +331,7 @@
       "Void",
       "Vanquisher"
     ],
-    "type": "AD",
-    "role": "Reaper"
+    "role": "Carry"
   },
   {
     "name": "Cho'Gath",
@@ -377,8 +340,7 @@
       "Void",
       "Juggernaut"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Kog'Maw",
@@ -388,8 +350,7 @@
       "Arcanist",
       "Longshot"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Annie",
@@ -398,8 +359,7 @@
       "Dark Child",
       "Arcanist"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Ornn",
@@ -408,8 +368,7 @@
       "Blacksmith",
       "Warden"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Kindred",
@@ -418,7 +377,6 @@
       "Eternal",
       "Quickstriker"
     ],
-    "type": "AD",
     "role": "Carry"
   },
   {
@@ -429,7 +387,6 @@
       "Emperor",
       "Disruptor"
     ],
-    "type": "AP",
     "role": "Carry"
   },
   {
@@ -439,8 +396,7 @@
       "Chronokeeper",
       "Invoker"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Fiddlesticks",
@@ -449,8 +405,7 @@
       "Harvester",
       "Vanquisher"
     ],
-    "type": "AP",
-    "role": "Reaper"
+    "role": "Carry"
   },
   {
     "name": "Shyvana",
@@ -459,18 +414,7 @@
       "Dragonborn",
       "Juggernaut"
     ],
-    "type": "AD",
-    "role": "Fighter"
-  },
-  {
-    "name": "Galio",
-    "cost": 5,
-    "traits": [
-      "Demacia",
-      "Heroic"
-    ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Tahm Kench",
@@ -480,8 +424,7 @@
       "Glutton",
       "Bruiser"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Sejuani",
@@ -490,8 +433,7 @@
       "Freljord",
       "Defender"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Sett",
@@ -500,17 +442,15 @@
       "Ionia",
       "The Boss"
     ],
-    "type": "AP",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Brock",
-    "cost": 7,
+    "cost": 5,
     "traits": [
       "Ixtal"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "T-Hex",
@@ -520,8 +460,7 @@
       "Piltover",
       "Gunslinger"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Bel'Veth",
@@ -530,8 +469,7 @@
       "Void",
       "Slayer"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Singed",
@@ -540,18 +478,16 @@
       "Zaun",
       "Juggernaut"
     ],
-    "type": "AP",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Aurelion Sol",
-    "cost": 7,
+    "cost": 5,
     "traits": [
       "Star Forger",
       "Targon"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Veigar",
@@ -560,18 +496,16 @@
       "Yordle",
       "Arcanist"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Baron Nashor",
-    "cost": 7,
+    "cost": 5,
     "traits": [
       "Void",
       "Riftscourge"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Darius",
@@ -580,8 +514,7 @@
       "Noxus",
       "Defender"
     ],
-    "type": "AD",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Yone",
@@ -590,8 +523,7 @@
       "Ionia",
       "Slayer"
     ],
-    "type": "HF",
-    "role": "ighter"
+    "role": "Carry"
   },
   {
     "name": "Warwick",
@@ -600,8 +532,7 @@
       "Zaun",
       "Quickstriker"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Fizz",
@@ -610,8 +541,7 @@
       "Bilgewater",
       "Yordle"
     ],
-    "type": "AP",
-    "role": "Reaper"
+    "role": "Carry"
   },
   {
     "name": "Poppy",
@@ -621,8 +551,7 @@
       "Yordle",
       "Juggernaut"
     ],
-    "type": "AD",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Kennen",
@@ -632,8 +561,7 @@
       "Yordle",
       "Defender"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Ziggs",
@@ -643,7 +571,6 @@
       "Yordle",
       "Longshot"
     ],
-    "type": "AP",
     "role": "Carry"
   },
   {
@@ -654,8 +581,7 @@
       "World Ender",
       "Slayer"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Volibear",
@@ -664,8 +590,7 @@
       "Freljord",
       "Bruiser"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Jhin",
@@ -674,7 +599,6 @@
       "Ionia",
       "Gunslinger"
     ],
-    "type": "AD",
     "role": "Carry"
   },
   {
@@ -685,17 +609,15 @@
       "Arcanist",
       "Defender"
     ],
-    "type": "AP",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Ryze",
-    "cost": 7,
+    "cost": 5,
     "traits": [
       "Rune Mage"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Nidalee",
@@ -704,8 +626,7 @@
       "Ixtal",
       "Huntress"
     ],
-    "type": "AP",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Tryndamere",
@@ -714,8 +635,7 @@
       "Freljord",
       "Slayer"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Rift Herald",
@@ -724,8 +644,7 @@
       "Void",
       "Bruiser"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Mel",
@@ -734,8 +653,7 @@
       "Noxus",
       "Disruptor"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Graves",
@@ -744,8 +662,7 @@
       "Bilgewater",
       "Gunslinger"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Skarner",
@@ -753,8 +670,7 @@
     "traits": [
       "Ixtal"
     ],
-    "type": "AD",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Diana",
@@ -762,8 +678,7 @@
     "traits": [
       "Targon"
     ],
-    "type": "AP",
-    "role": "Reaper"
+    "role": "Carry"
   },
   {
     "name": "Kai'Sa",
@@ -773,8 +688,7 @@
       "Void",
       "Longshot"
     ],
-    "type": "AD",
-    "role": "CasterFormSwapper"
+    "role": "Carry"
   },
   {
     "name": "Renekton",
@@ -782,8 +696,7 @@
     "traits": [
       "Shurima"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Nasus",
@@ -791,8 +704,7 @@
     "traits": [
       "Shurima"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Xerath",
@@ -801,8 +713,7 @@
       "Shurima",
       "Ascendant"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Thresh",
@@ -811,8 +722,7 @@
       "Shadow Isles",
       "Warden"
     ],
-    "type": "AP",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Gwen",
@@ -821,8 +731,7 @@
       "Shadow Isles",
       "Disruptor"
     ],
-    "type": "AP",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Kalista",
@@ -831,8 +740,7 @@
       "Shadow Isles",
       "Vanquisher"
     ],
-    "type": "AD",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "LeBlanc",
@@ -841,8 +749,7 @@
       "Noxus",
       "Invoker"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Viego",
@@ -851,8 +758,7 @@
       "Shadow Isles",
       "Quickstriker"
     ],
-    "type": "HF",
-    "role": "ighter"
+    "role": "Carry"
   },
   {
     "name": "Ekko",
@@ -861,8 +767,7 @@
       "Zaun",
       "Disruptor"
     ],
-    "type": "AP",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Bard",
@@ -870,8 +775,7 @@
     "traits": [
       "Caretaker"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Vayne",
@@ -880,7 +784,6 @@
       "Demacia",
       "Longshot"
     ],
-    "type": "AD",
     "role": "Carry"
   },
   {
@@ -890,7 +793,6 @@
       "Ionia",
       "Quickstriker"
     ],
-    "type": "AD",
     "role": "Carry"
   },
   {
@@ -901,8 +803,7 @@
       "Arcanist",
       "Juggernaut"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Xin Zhao",
@@ -912,8 +813,7 @@
       "Ionia",
       "Warden"
     ],
-    "type": "AD",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Yorick",
@@ -922,8 +822,7 @@
       "Shadow Isles",
       "Warden"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Orianna",
@@ -932,8 +831,7 @@
       "Piltover",
       "Invoker"
     ],
-    "type": "AP",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Qiyana",
@@ -942,8 +840,7 @@
       "Ixtal",
       "Slayer"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Loris",
@@ -952,8 +849,7 @@
       "Piltover",
       "Warden"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Blitzcrank",
@@ -962,8 +858,7 @@
       "Zaun",
       "Juggernaut"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Dr. Mundo",
@@ -972,27 +867,24 @@
       "Zaun",
       "Bruiser"
     ],
-    "type": "AD",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Zaahen",
-    "cost": 7,
+    "cost": 5,
     "traits": [
       "Darkin",
       "Immortal"
     ],
-    "type": "AD",
-    "role": "Fighter"
+    "role": "Frontline"
   },
   {
     "name": "Tibbers",
-    "cost": 5,
+    "cost": 1,
     "traits": [
       "Arcanist"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   },
   {
     "name": "Lucian & Senna",
@@ -1001,8 +893,7 @@
       "Soulbound",
       "Gunslinger"
     ],
-    "type": "AD",
-    "role": "Caster"
+    "role": "Carry"
   },
   {
     "name": "Kobuko & Yuumi",
@@ -1012,7 +903,6 @@
       "Bruiser",
       "Invoker"
     ],
-    "type": "AP",
-    "role": "Tank"
+    "role": "Frontline"
   }
 ]

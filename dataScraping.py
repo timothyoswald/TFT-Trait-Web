@@ -12,15 +12,21 @@ def getData():
     allChamps = set16["champions"]
     units = []
     
+    frontliners = {"Tank", "Fighter"}
+
     # extract only desired properties
     for unit in allChamps:
         if unit["traits"]:
+            if unit["role"][2:] in frontliners:
+                role = "Frontline"
+            else:
+                role = "Carry"
             cleanUnit = {
-                    'name': unit['name'].strip(),
-                    'cost': unit['cost'],
+                    'name': unit["name"].strip(),
+                    'cost': 1 if unit["name"].strip() == "Tibbers" else unit["cost"],
                     'traits': unit["traits"],
-                    'type': unit["role"][:2],
-                    'role': unit["role"][2:]
+                    # 'type': unit["role"][:2],
+                    'role': role
                 }
             units.append(cleanUnit)
     print("champ data done")
